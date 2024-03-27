@@ -1,24 +1,34 @@
-# README
+# Real-Time Filtering with Stimulus Reflex in Rails
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Introduction
+This project demonstrates how to implement real-time filtering functionality using Stimulus Reflex in a Ruby on Rails application. Real-time filtering allows users to instantly see filtered results as they type, without the need to submit a form or reload the page.
 
-Things you may want to cover:
+## Requirements
+- Ruby
+- Rails (>=7.x)
+- Stimulus Reflex
+- Redis
 
-* Ruby version
+## Installation
+1. Clone the repository:
 
-* System dependencies
+2. Install dependencies:
+    ```bash
+    bundle install
+    ```
 
-* Configuration
+3. Set up the database:
+    ```bash
+    rails db:drop db:create db:migrate db:seed
+    ```
 
-* Database creation
+4. Start the Rails server:
+    ```bash
+    rails server
+    ```
 
-* Database initialization
+5. Visit `http://localhost:3000` in your web browser.
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Usage
+1. Type your search query into the search input field.
+2. The list of items will be filtered in real-time based on your input.
